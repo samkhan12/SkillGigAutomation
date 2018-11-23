@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>TestNG:  LoginTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>LoginTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Nov 23 16:42:27 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>71 seconds (71075 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.ReactSignInTest.TC_Negative_Verify_EmptyUserName_EmpltyPassword()'><b>TC_Negative_Verify_EmptyUserName_EmpltyPassword</b><br>Test class: tests.ReactSignInTest<br>Test method: Verify the error message displayed by empty username and empty password</td>
+<td></td>
+<td>7</td>
+<td>tests.ReactSignInTest@5383967b</td></tr>
+<tr>
+<td title='tests.ReactSignInTest.TC_Negative_Verify_EmptyUserName_ValidPassword()'><b>TC_Negative_Verify_EmptyUserName_ValidPassword</b><br>Test class: tests.ReactSignInTest<br>Test method: Verify the error message displayed by empty username and valid password</td>
+<td></td>
+<td>4</td>
+<td>tests.ReactSignInTest@5383967b</td></tr>
+<tr>
+<td title='tests.ReactSignInTest.TC_Negative_Verify_IncorrectUserName_IncorrectPassword()'><b>TC_Negative_Verify_IncorrectUserName_IncorrectPassword</b><br>Test class: tests.ReactSignInTest<br>Test method: Verify the error message displayed when user enter incorrect  username and incorrect password</td>
+<td></td>
+<td>4</td>
+<td>tests.ReactSignInTest@5383967b</td></tr>
+<tr>
+<td title='tests.ReactSignInTest.TC_Negative_Verify_IncorrectUserName_correctPassword()'><b>TC_Negative_Verify_IncorrectUserName_correctPassword</b><br>Test class: tests.ReactSignInTest<br>Test method: Verify the error message displayed by incorrect username and correct password</td>
+<td></td>
+<td>4</td>
+<td>tests.ReactSignInTest@5383967b</td></tr>
+<tr>
+<td title='tests.ReactSignInTest.TC_Negative_Verify_InvalidUserName_InvalidPassword()'><b>TC_Negative_Verify_InvalidUserName_InvalidPassword</b><br>Test class: tests.ReactSignInTest<br>Test method: Verify the error message displayed when user enter invalid  username and invalid password</td>
+<td></td>
+<td>8</td>
+<td>tests.ReactSignInTest@5383967b</td></tr>
+<tr>
+<td title='tests.ReactSignInTest.TC_Negative_Verify_InvalidUserName_validPassword()'><b>TC_Negative_Verify_InvalidUserName_validPassword</b><br>Test class: tests.ReactSignInTest<br>Test method: Verify the error message displayed when user enter invalid  username and valid password</td>
+<td></td>
+<td>4</td>
+<td>tests.ReactSignInTest@5383967b</td></tr>
+<tr>
+<td title='tests.ReactSignInTest.TC_Negative_Verify_UserName_ValidPassword()'><b>TC_Negative_Verify_UserName_ValidPassword</b><br>Test class: tests.ReactSignInTest<br>Test method: Verify the error message displayed by valid username and empty password</td>
+<td></td>
+<td>4</td>
+<td>tests.ReactSignInTest@5383967b</td></tr>
+<tr>
+<td title='tests.ReactSignInTest.TC_Negative_Verify_correctUserName_IncorrectPassword()'><b>TC_Negative_Verify_correctUserName_IncorrectPassword</b><br>Test class: tests.ReactSignInTest<br>Test method: Verify the error message displayed by correct username and incorrect password</td>
+<td></td>
+<td>4</td>
+<td>tests.ReactSignInTest@5383967b</td></tr>
+<tr>
+<td title='tests.ReactSignInTest.TC_Negative_Verify_validUserName_InvalidPassword()'><b>TC_Negative_Verify_validUserName_InvalidPassword</b><br>Test class: tests.ReactSignInTest<br>Test method: Verify the error message displayed when user enter valid  username and invalid password</td>
+<td></td>
+<td>4</td>
+<td>tests.ReactSignInTest@5383967b</td></tr>
+<tr>
+<td title='tests.ReactSignInTest.TC_Positive_Verify_ValidUserName_ValidPassword()'><b>TC_Positive_Verify_ValidUserName_ValidPassword</b><br>Test class: tests.ReactSignInTest<br>Test method: Verify the new user by valid  username and valid password</td>
+<td></td>
+<td>9</td>
+<td>tests.ReactSignInTest@5383967b</td></tr>
+<tr>
+<td title='tests.ReactSignInTest.TC_Positive_Verify_the_NewUser_login_ByFacebook()'><b>TC_Positive_Verify_the_NewUser_login_ByFacebook</b><br>Test class: tests.ReactSignInTest<br>Test method: Verify the new user login by facebook</td>
+<td></td>
+<td>4</td>
+<td>tests.ReactSignInTest@5383967b</td></tr>
+<tr>
+<td title='tests.ReactSignInTest.TC_Positive_Verify_the_NewUser_login_ByLinkedIn()'><b>TC_Positive_Verify_the_NewUser_login_ByLinkedIn</b><br>Test class: tests.ReactSignInTest<br>Test method: Verify the new user login by LinkedIn</td>
+<td></td>
+<td>4</td>
+<td>tests.ReactSignInTest@5383967b</td></tr>
+</table><p>
+</body>
+</html>
