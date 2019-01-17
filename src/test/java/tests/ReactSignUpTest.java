@@ -30,7 +30,7 @@ public class ReactSignUpTest extends BaseTest {
         ExtentTestManager.getTest().setDescription("Verify the error message displayed when user enter invalid full name, invalid email id and incorrect password");
         
         //*************PAGE INSTANTIATIONS*************
-        HomePageSignUp homePage = new HomePageSignUp(driver,wait);
+        HomePage homePage = new HomePage(driver,wait);
  
         ReactSignUp SignUpPage = new ReactSignUp(driver,wait);
         //*************PAGE METHODS********************
@@ -59,7 +59,7 @@ public class ReactSignUpTest extends BaseTest {
         ExtentTestManager.getTest().setDescription("Verify the error message displayed by empty fullname, empty email and empty password");
         
         //*************PAGE INSTANTIATIONS*************
-        HomePageSignUp homePage = new HomePageSignUp(driver,wait);
+        HomePage homePage = new HomePage(driver,wait);
  
         ReactSignUp SignUpPage = new ReactSignUp(driver,wait);
         //*************PAGE METHODS********************
@@ -91,7 +91,7 @@ public class ReactSignUpTest extends BaseTest {
         ExtentTestManager.getTest().setDescription("Verify the error message displayed by empty fullname");
         
         //*************PAGE INSTANTIATIONS*************
-        HomePageSignUp homePage = new HomePageSignUp(driver,wait);
+        HomePage homePage = new HomePage(driver,wait);
  
         ReactSignUp SignUpPage = new ReactSignUp(driver,wait);
         //*************PAGE METHODS********************
@@ -120,7 +120,7 @@ public class ReactSignUpTest extends BaseTest {
         ExtentTestManager.getTest().setDescription("Verify the error message displayed by empty password");
         
         //*************PAGE INSTANTIATIONS*************
-        HomePageSignUp homePage = new HomePageSignUp(driver,wait);
+        HomePage homePage = new HomePage(driver,wait);
  
         ReactSignUp SignUpPage = new ReactSignUp(driver,wait);
         //*************PAGE METHODS********************
@@ -149,7 +149,7 @@ public class ReactSignUpTest extends BaseTest {
         ExtentTestManager.getTest().setDescription("Verify that error message is displayed by empty email address");
         
         //*************PAGE INSTANTIATIONS*************
-        HomePageSignUp homePage = new HomePageSignUp(driver,wait);
+        HomePage homePage = new HomePage(driver,wait);
  
         ReactSignUp SignUpPage = new ReactSignUp(driver,wait);
         //*************PAGE METHODS********************
@@ -178,7 +178,7 @@ public class ReactSignUpTest extends BaseTest {
         ExtentTestManager.getTest().setDescription("Verify that error message is displayed when user enters invalid email address.");
         
         //*************PAGE INSTANTIATIONS*************
-        HomePageSignUp homePage = new HomePageSignUp(driver,wait);
+        HomePage homePage = new HomePage(driver,wait);
  
         ReactSignUp SignUpPage = new ReactSignUp(driver,wait);
         //*************PAGE METHODS********************
@@ -206,7 +206,7 @@ public class ReactSignUpTest extends BaseTest {
         ExtentTestManager.getTest().setDescription("Verify that user is shown error message when user uses existing email id for SignUp");
         
         //*************PAGE INSTANTIATIONS*************
-        HomePageSignUp homePage = new HomePageSignUp(driver,wait);
+        HomePage homePage = new HomePage(driver,wait);
  
         ReactSignUp SignUpPage = new ReactSignUp(driver,wait);
         //*************PAGE METHODS********************
@@ -234,7 +234,7 @@ public class ReactSignUpTest extends BaseTest {
         ExtentTestManager.getTest().setDescription("Verify that new user is able to SignUp properly with valid data");
         
         //*************PAGE INSTANTIATIONS*************
-        HomePageSignUp homePage = new HomePageSignUp(driver,wait);
+        HomePage homePage = new HomePage(driver,wait);
  
         ReactSignUp SignUpPage = new ReactSignUp(driver,wait);
         //*************PAGE METHODS********************
