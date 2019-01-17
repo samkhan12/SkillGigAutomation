@@ -3,6 +3,7 @@ package utils.ExtentReports;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
+import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -26,8 +27,13 @@ public class ExtentTestManager {
     }
 
     public static synchronized ExtentTest startTest(String testName, String desc) {
-        ExtentTest test = extent.startTest(testName, desc);
-        extentTestMap.put((int) (long) (Thread.currentThread().getId()), test);
-        return test;
+ 
+
+     ExtentTest test = extent.startTest(testName, desc);
+     extentTestMap.put((int) (long) (Thread.currentThread().getId()), test);
+     
+
+     return test;
     }
+
 }

@@ -1,5 +1,7 @@
 package tests;
 
+import java.lang.reflect.Method;
+
 import org.apache.log4j.BasicConfigurator;
 import org.testng.annotations.Test;
 import pages.HomePage;
@@ -16,9 +18,13 @@ public class ReactSignInTest extends BaseTest {
     // 2) We send these driver and wait variables to the page class with below declaration
     // 3) super () method in page class transfer the driver and wait variables values to the BasePage class.
 	
-	@Test (priority = 0, description="Verify the error message displayed when user enter invalid  username and invalid password")
-    public void TC_Negative_Verify_InvalidUserName_InvalidPassword () throws InterruptedException {
-	    BasicConfigurator.configure();
+	@Test (priority = 0, testName="Verify the error message displayed when user enter invalid  username and invalid password")
+	public void TC_Negative_Verify_InvalidUserName_InvalidPassword () throws InterruptedException {
+		
+		
+		BasicConfigurator.configure();
+	    
+
         //ExtentReports Description
         ExtentTestManager.getTest().setDescription("Verify the error message displayed when user enter invalid  username and invalid password");
         
@@ -207,8 +213,7 @@ public class ReactSignInTest extends BaseTest {
 	        //*************PAGE METHODS********************
 
 	       // homePage.goToSkillGigs();
-	        
-	        //Login to SkillGigs
+	        	        //Login to SkillGigs
 	 
 	        Thread.sleep(2000);
 

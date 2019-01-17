@@ -14,7 +14,7 @@ public class HomePage extends BasePage {
     }
 
     //*********Page Variables*********
-    String baseURL = "http://54.237.210.138:80/SignIn";
+    String baseURL = "http://52.3.245.139:80/SignIn";
 
     //*********Web Elements*********
     // String signInButtonClass = "//*[@id=\"nav1\"]/ul[2]/li[1]/a";

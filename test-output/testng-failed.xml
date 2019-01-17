@@ -7,13 +7,14 @@
   </listeners>
   <test name="LoginTest(failed)">
     <classes>
-      <class name="tests.ReactSignInTest">
+      <class name="tests.ReactSignUpTest">
         <methods>
-          <include name="TC_Negative_Verify_validUserName_InvalidPassword"/>
+          <include name="TC_Negative_Verify_the_ErrorMessage_usesExistingemail"/>
+          <include name="TC_Negative_Verify_the_NewUser_IsableTo_SignUp_with_ValidData"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- tests.ReactSignInTest -->
+      </class> <!-- tests.ReactSignUpTest -->
     </classes>
   </test> <!-- LoginTest(failed) -->
 </suite> <!-- Failed suite [N11 Test Suite] -->
