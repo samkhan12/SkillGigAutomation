@@ -10,9 +10,15 @@
       <class name="tests.ReactSignUpTest">
         <methods>
           <include name="TC_Negative_Verify_the_ErrorMessage_usesExistingemail"/>
+          <include name="TC_Negative_Verify_the_Errormessage_displayedby_emptyfullname_emptyemail_emptypassword"/>
           <include name="TC_Negative_Verify_the_NewUser_IsableTo_SignUp_with_ValidData"/>
+          <include name="TC_Negative_Verify_the_ErrorMessage_Displayedby_emptypassword"/>
+          <include name="TC_Negative_Verify_the_ErrorMessage_Displayedby_emptyaddress"/>
           <include name="teardown"/>
+          <include name="TC_Negative_Verify_the_ErrorMessage_Displayedby_emptyfullname"/>
           <include name="setup"/>
+          <include name="TC_Negative_Verify_ErrorDisplayed_whenuser_enter_invalid_fullname_emailid_password"/>
+          <include name="TC_Negative_Verify_the_ErrorMessage_Displayedby_Invalidaddress"/>
         </methods>
       </class> <!-- tests.ReactSignUpTest -->
     </classes>
